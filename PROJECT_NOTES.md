@@ -23,6 +23,15 @@ Stable core web drill for range-based postflop decisions (no recorder UI).
   - Right: `Effective Stacks` single-select (`50BB` to `500BB+`)
 - Under-board status line now shows only left-side tags (`SRP | IP | PFR` style).
 - Tag selections persist until user changes them; `Start Over` clears all.
+- Hand mode selector:
+  - `Live Drill` (random)
+  - `Hand Replay` (manual)
+- `Hand Replay` uses visual `Input Hand` modal (52-card picker with slot-by-slot fill) instead of dropdowns.
+- Session queue (max 10 hands):
+  - Named sessions
+  - `Add Loaded Hand`, `Start Session`, `Clear Session`
+  - Import/export JSON for shareable hand packs
+  - Sequential run-through with queue progress indicator
 
 ## Key Files
 - `rtp_drillz_web.html` (source web UI/logic)
