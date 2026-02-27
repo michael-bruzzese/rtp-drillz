@@ -1931,7 +1931,7 @@
 
       if (state.stage === "start") {
         els.startSplash.style.display = "block";
-        setControls([{ text: "Deal Hand", primary: true, onClick: dealHand }]);
+        setControls([{ text: "Deal", primary: true, onClick: dealHand }]);
         updateTimerPauseButton();
         renderConfigSelections();
         return;
@@ -1941,7 +1941,7 @@
 
       if (state.stage === "hand") {
         setControls([
-          { text: "Keep Hand", primary: true, onClick: enterFlop },
+          { text: "Deal Flop", primary: true, onClick: enterFlop },
           { text: state.mode === "replay" ? "Edit Hand" : "New Hand", primary: false, onClick: dealHand }
         ]);
         updateTimerPauseButton();
@@ -1951,7 +1951,7 @@
 
       if (state.stage === "flop") {
         setControls([
-          { text: "Keep Flop \u2192 Turn", primary: true, onClick: enterTurn },
+          { text: "Deal Turn", primary: true, onClick: enterTurn },
           { text: state.mode === "replay" ? "Edit Flop" : "New Flop", primary: false, onClick: enterFlop }
         ]);
         updateTimerPauseButton();
@@ -1961,7 +1961,7 @@
 
       if (state.stage === "turn") {
         setControls([
-          { text: "Keep Turn \u2192 River", primary: true, onClick: enterRiver },
+          { text: "Deal River", primary: true, onClick: enterRiver },
           { text: state.mode === "replay" ? "Edit Turn" : "New Turn", primary: false, onClick: enterTurn }
         ]);
         updateTimerPauseButton();
@@ -1971,7 +1971,7 @@
 
       if (state.stage === "river") {
         setControls([
-          { text: "Keep River", primary: true, onClick: keepRiver },
+          { text: "Deal", primary: true, onClick: keepRiver },
           { text: state.mode === "replay" ? "Edit River" : "New River", primary: false, onClick: enterRiver }
         ]);
         updateTimerPauseButton();
@@ -1981,7 +1981,7 @@
 
       if (state.stage === "done") {
         setControls([
-          { text: "Deal Hand", primary: true, onClick: dealHand },
+          { text: "Deal", primary: true, onClick: dealHand },
           { text: state.mode === "replay" ? "Edit River" : "New River", primary: false, onClick: enterRiver }
         ]);
       }
