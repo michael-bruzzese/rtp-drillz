@@ -2,6 +2,11 @@
 
 RTP Drillz is a poker study tool for range-based flop/turn/river drills.
 
+## Status
+
+This repository is a **legacy snapshot**. New feature development is now done in:
+- `https://github.com/michael-bruzzese/rtp-drillz-shareable`
+
 ## Files
 
 - `rtp_drillz_web_embedded.html`: single-file web app with embedded card images (deploy this file).
